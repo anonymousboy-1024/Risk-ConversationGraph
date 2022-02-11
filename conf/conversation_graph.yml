@@ -1,0 +1,30 @@
+train:
+  batch_size: 32
+  n_epochs: 30
+  loss: "mse_loss"
+  grad_clip: 0
+
+model:
+  embedding_size: 768
+  hidden_size: [300, 200, 100]
+  hidden_layers: 3
+  dropout: 0.1
+  in_bn: False
+  hid_bn: False
+  out_bn: True
+
+optim:
+  optimizer: 'Adagrad'
+  lr: 0.001
+  weight_decay: 0.0000001
+
+scheduler:
+  is_scheduler: false
+  lr_dc: 0.1
+  lr_dc_step: 10
+
+data:
+  label: 'firm_std_10_post'
+
+checkpoint:
+  choice: 'best'  # latest or best
