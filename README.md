@@ -2,7 +2,7 @@
 
 This repo provides a reference implementation of **Risk-ConversationGraph** as described in the paper [Risk Prediction with Conversation Graph]():
 
-![Conversation Graph](pics/conversation_graph.png)
+![Conversation Graph](pics/graph_architecture.png)
 
 
 Submitted to SIGKDD 2022 for review
